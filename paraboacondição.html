@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/WhatsApp_Image_2024-03-06_at_11.27.35-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <title>Strong Finance</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      height: 63px;
+      
+    }
+
+    nav li {
+        display: inline-block;
+      ;
+    }
+
+    nav li a {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-decoration: none;
+
+    }
+    nav li a:hover{
+        background-color: rgb(255, 12, 12);
+    }
+    .dropdown-menu a{
+        display: block;
+      color: black;
+     
+    }
+.dropdown-menu{
+position: absolute;
+box-shadow: 0 0 2px black;
+display: none;
+    }
+    .dropdown-menu a:hover{
+background-color: rgb(240, 74, 23);
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+.img{
+    width: 80px;
+    height: 59px;
+}
+li{
+    align-items: center;
+    padding: 24px;
+}
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#dicas ul {
+    list-style-type: square;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+#investimentos{
+    font-size: 18px;
+
+}
+.container h2{
+font-size: 22px;
+}
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #fff7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #f03106 0%, #000000 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #913714 0%, #ffa201 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #ff1c1c;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+h2{
+    font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+</style>
+
+<body>
+    
+       
+<header>
+   
+    <nav>
+        <div class="logo">
+            <img src="img2/logo oficial.png" class="img">
+        </div>
+       
+        <ul>
+            <li>
+                <a href="telainicial.html">ÍNICIO</a>
+            </li>
+
+
+            <li>
+                <li class="dropdown">
+                <a href="">COMO ECONOMIZAR</a>
+
+                <div class="dropdown-menu">
+                    <a href="paraminhaaposentadoria.html">PARA MINHA APOSENTADORIA</a>    
+                     <a href="parameunegocio.html">PARA MEU NEGÓCIO</a>
+
+                     <a href="paraboacondição.html">PARA TER UMA BOA CONDIÇÃO FINANCEIRA</a>
+                  
+                    </li>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="">CALCULADORAS</a>
+          
+            
+            <div class="dropdown-menu">
+               
+             <a href="juroscom.html">JUROS COMPOSTOS</a>
+             <a href="calculadorainss.html">CALCULADORA DE INSS</a>
+             <a href="gastocompet.html">CALCULADORA DE GASTOS COM O PET</a>
+             <a href="investimentos.html">CALCULADORA DE INVESTIMENTOS</a>
+            </li>
+</div>
+
+            <li>
+                <a href="aposentadoria.html">APOSENTADORIA</a>
+            </li>
+
+            <li>
+                <a href="produtos.html">BITCOIN</a>
+            </li>
+            <li>
+                <a href="serviçosfiscais.html">POLÍTICA MONETÁRIA</a>
+            </li>
+            <li class="contato">
+                <a href="contato.html">CONTATO</a>
+            </li>
+
+        </ul>
+    </nav>
+    
+</header>
+
+<div class="card">
+  <p class="heading">
+    CUIDE!
+  </p>
+  <p>
+    "Boa condição financeira transforma sonhos em realidade e incertezas em oportunidades."
+  </p>
+  <p>STRONG FINANCE
+</p></div>
+<section id="inicio">
+    <div class="container">
+        <h2>USE ESSAS DICAS PARA TER UMA MELHOR CONDIÇÃO!</h2>
+        <p>Você já parou para pensar que uma boa condição financeira não é apenas uma questão de sorte, mas sim o resultado de hábitos e conhecimentos financeiros sólidos? Este portal foi criado com o objetivo de ajudá-lo a entender melhor como gerenciar suas finanças de forma eficaz, tomar decisões financeiras inteligentes e alcançar a tão almejada estabilidade financeira.</p>
+        <a href="#dicas" class="button">Veja nossas dicas!</a>
+    </div>
+</section>
+
+<section id="dicas">
+    <div class="container">
+        <h2>Dicas para uma Boa Condição Financeira</h2>
+        <ul>
+            <li>1. Faça um orçamento mensal</li>
+            <li>2. Poupe uma parte do seu salário regularmente</li>
+            <li>3. Evite dívidas desnecessárias</li>
+            <li>4. Invista em educação financeira</li>
+        </ul>
+    </div>
+</section>
+
+<section id="investimentos">
+    <div class="container">
+        <h2>INVESTIMENTOS</h2>
+        <p>Conheça diferentes tipos de investimentos e saiba como fazer seu dinheiro trabalhar para você.</p>
+ <ul>
+<li>Por que Investir?</li>
+<p>Investir é fundamental para aumentar sua riqueza ao longo do tempo. Enquanto a poupança pode proteger seu dinheiro, os investimentos oferecem a oportunidade de aumentar seu patrimônio líquido através do crescimento do capital e da geração de renda passiva.</p>
+ <li>Tipos de Investimentos</li>
+ <p>Existem muitas opções de investimento disponíveis, desde os tradicionais como ações e títulos até os mais modernos como fundos de investimento imobiliário (FIIs) e criptomoedas. Cada tipo de investimento possui seus próprios riscos e potenciais retornos, por isso é importante entender as características de cada um antes de tomar uma decisão.</p>
+ <br><li>Como Começar a Investir</li>
+ <p>Investir pode parecer intimidador no início, mas com o conhecimento certo e uma estratégia bem definida, qualquer um pode se tornar um investidor bem-sucedido. Aqui, oferecemos orientações e dicas práticas para ajudá-lo a dar os primeiros passos no mundo dos investimentos, desde a definição de objetivos financeiros até a escolha das melhores opções de investimento para você.</p>
+ <br><li>Educação Financeira Continuada</li>
+ <p>Lembre-se de que a educação financeira é uma jornada contínua. À medida que você avança em sua jornada de investimentos, é importante continuar aprendendo e se atualizando sobre as últimas tendências e estratégias de investimento. Esteja aberto a explorar novas oportunidades e a ajustar sua estratégia conforme necessário para maximizar seus resultados.</p>
+<br></ul>
+</section>
+
+    </div>
+</section>
+
+
+</body>
+
+</html>

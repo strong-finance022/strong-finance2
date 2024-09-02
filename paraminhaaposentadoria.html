@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/WhatsApp_Image_2024-03-06_at_11.27.35-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+
+    <title>Strong Finance</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      height: 63px;
+      
+    }
+
+    nav li {
+        display: inline-block;
+      ;
+    }
+
+    nav li a {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-decoration: none;
+
+    }
+    nav li a:hover{
+        background-color: rgb(255, 12, 12);
+    }
+    .dropdown-menu a{
+        display: block;
+      color: black;
+     
+    }
+.dropdown-menu{
+position: absolute;
+box-shadow: 0 0 2px black;
+display: none;
+    }
+    .dropdown-menu a:hover{
+background-color: rgb(240, 74, 23);
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+.img{
+    width: 80px;
+    height: 59px;
+}
+li{
+    align-items: center;
+    padding: 24px;
+}
+
+section {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #af270f;
+    font-size: 1.8em;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.foto-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.foto-galeria img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, filter 0.3s;
+}
+.foto-galeria img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.cpf{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 34px;
+    transition: transform 0.3s, filter 0.3s;
+}
+.ul{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.h167 h1{
+    text-align: center;
+    font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.h21 h1{
+    text-align: center;
+    font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .card::before {
+    content: '';
+    position:absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 200px;
+    height: 264px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #ff1c1c 0%, #ffffff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #ff0202 0%, #ff0303 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .card p:not(.heading) {
+    font-size: 14px;
+  }
+  
+  .card p:last-child {
+    color: #ff1c1c;
+    font-weight: 100;
+  }
+  
+  .card:hover::after {
+    filter: blur(30px);
+  }
+  
+  .card:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  }
+  form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"], button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ajusta a largura dos inputs e botões */
+    max-width: 300px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza inputs e botões */
+}
+
+button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+  
+</style>
+
+<body>
+    
+       
+<header>
+   
+    <nav>
+        <div class="logo">
+            <img src="img2/logo oficial.png" class="img">
+        </div>
+       
+        <ul>
+            <li>
+                <a href="telainicial.html">ÍNICIO</a>
+            </li>
+
+
+            <li>
+                <li class="dropdown">
+                <a href="">COMO ECONOMIZAR</a>
+
+                <div class="dropdown-menu">
+                    <a href="paraminhaaposentadoria.html">PARA MINHA APOSENTADORIA</a>    
+                     <a href="parameunegocio.html">PARA MEU NEGÓCIO</a>
+             
+                     <a href="paraboacondição.html">PARA TER UMA BOA CONDIÇÃO FINANCEIRA</a>
+                  
+                    </li>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="">CALCULADORAS</a>
+          
+            
+            <div class="dropdown-menu">
+              
+             <a href="juroscom.html">JUROS COMPOSTOS</a>
+             <a href="calculadorainss.html">CALCULADORA DE INSS</a>
+             <a href="gastocompet.html">CALCULADORA DE GASTOS COM O PET</a>
+             <a href="investimentos.html">CALCULADORA DE INVESTIMENTOS</a>
+            </li>
+</div>
+
+            <li>
+                <a href="aposentadoria.html">APOSENTADORIA</a>
+            </li>
+
+            <li>
+                <a href="produtos.html">BITCOIN</a>
+            </li>
+            <li>
+                <a href="serviçosfiscais.html">POLÍTICA MONETÁRIA</a>
+            </li>
+            <li class="contato">
+                <a href="contato.html">CONTATO</a>
+            </li>
+
+        </ul>
+    </nav>
+    
+
+</header><br>
+
+<div class="card">
+  <p class="heading">
+    
+  </p>
+  <p>
+    "A aposentadoria é a recompensa por anos de trabalho árduo, um momento para refletir, relaxar e aproveitar o que a vida tem de melhor."
+  </p>
+  <p>STRONG FINANCE
+</p></div>
+<div class="container">
+    <div class="main-content">
+        <div class="text">
+            <h2>O que é Aposentadoria?</h2>
+            <p>A aposentadoria é um benefício concedido aos trabalhadores que atingem uma idade mínima ou um tempo específico de contribuição. É um momento crucial na vida de qualquer trabalhador, oferecendo uma fonte de renda após anos de trabalho.</p>
+            <img src="img2/aposentadoria-por-idade-inss-1200x720.jpg" alt="Imagem ilustrativa de aposentadoria"  width="500px"height="250px">
+        </div>
+
+        <div class="text">
+            <h2>Tipos de Aposentadoria</h2>
+            <ul>
+                <li><strong>Aposentadoria por Tempo de Contribuição:</strong> Concedida a quem contribuiu por um número mínimo de anos.</li>
+                <li><strong>Aposentadoria por Idade:</strong> Disponível para quem atinge a idade mínima estabelecida.</li>
+                <li><strong>Aposentadoria Especial:</strong> Para trabalhadores que exerceram atividades insalubres ou perigosas.</li>
+            </ul>
+            <img src="img2/Aposentadoria-por-idade.jpg" alt="Tipos de aposentadoria" width="500px"height="250px">
+        </div>
+
+        <div class="text">
+            <h2>Como Planejar sua Aposentadoria</h2>
+            <p>Planejar a aposentadoria é essencial para garantir uma renda adequada no futuro. Aqui estão algumas dicas:</p>
+            <ul>
+                <li><strong>Entenda o Sistema:</strong> Conheça as regras e requisitos do sistema de previdência social.</li>
+                <li><strong>Calcule Suas Necessidades:</strong> Estime quanto você precisará para manter o seu padrão de vida.</li>
+                <li><strong>Invista com Antecedência:</strong> Considere planos de previdência privada ou investimentos para complementar sua renda.</li>
+            </ul>
+            <img src="img2/idoso-esperando-atendimento-na-fila-do-inss-previdencia-social-beneficios-aposentadoria-direitos-trabalhistas-fdr-renda-financas-1.jpg" alt="Planejamento da aposentadoria" width="500px"height="250px">
+        </div>
+
+        <div class="text">
+            <h2>Dicas Úteis:</h2>
+            <ul>
+                <li><strong>Comece cedo:</strong> Quanto antes você começar a planejar, melhor.</li>
+                <li><strong>Mantenha-se informado:</strong> A legislação pode mudar, por isso, fique atualizado.</li>
+                <li><strong>Busque orientação:</strong> Consulte um especialista em planejamento financeiro.</li>
+            </ul>
+            <img src="img2/MNXUXFHHRNPH5MVTGAO2GPZ3UE.jpg" alt="Dicas úteis para aposentadoria" width="500px"height="250px">
+        </div>
+    </div>
+</div>
+<br><br>
+<section id="planejamento">
+    <h2>Planejamento Financeiro</h2>
+    <p>Um planejamento financeiro eficaz para a aposentadoria envolve definir objetivos claros, calcular o valor necessário para manter seu padrão de vida e criar um plano para alcançar esses objetivos. Comece o planejamento o quanto antes para aproveitar o efeito dos juros compostos e ajustar suas economias conforme suas necessidades e expectativas para a aposentadoria.</p>
+</section>
+
+<section id="investimentos">
+    <h2>Investimentos</h2>
+    <p>Investir de forma inteligente é fundamental para garantir uma aposentadoria confortável. Diversifique seus investimentos em ações, títulos, imóveis e fundos para reduzir riscos e aumentar retornos. Considere investir em planos de previdência privada e contas de aposentadoria que oferecem benefícios fiscais e ajudam a acumular riqueza ao longo do tempo.</p>
+</section>
+
+<section id="estrategias">
+    <h2>Estratégias de Economia</h2>
+    <ul>
+        <li><strong>Automatize suas economias:</strong> Configure transferências automáticas para contas de poupança ou investimentos.</li>
+        <li><strong>Reduza dívidas:</strong> Priorize o pagamento de dívidas de alto custo para liberar mais recursos para a poupança.</li>
+        <li><strong>Revise seu orçamento:</strong> Ajuste seus gastos para maximizar sua capacidade de poupança e investimento.</li>
+        <li><strong>Contribua regularmente:</strong> Faça contribuições regulares para suas contas de aposentadoria e aumente-as conforme possível.</li>
+    </ul>
+</section>
+
+<section id="dicas">
+    <h2>Dicas para Aposentadoria</h2>
+    <ul>
+        <li><strong>Defina um orçamento de aposentadoria:</strong> Estime suas despesas futuras e ajuste suas economias para cobri-las.</li>
+        <li><strong>Cuide da saúde:</strong> A saúde é um fator crucial na aposentadoria; mantenha um estilo de vida saudável e considere seguro saúde.</li>
+        <li><strong>Planeje para o inesperado:</strong> Tenha um fundo de emergência para cobrir despesas imprevistas.</li>
+        <li><strong>Consulte um planejador financeiro:</strong> Um profissional pode ajudar a otimizar seu plano de aposentadoria e investimentos.</li>
+    </ul>
+</section>
+
+
+  
+<div class="h21">
+<h1>GERENCIE BEM SUA APOSENTADORIA!</h1><br><br>
+</div>
+<div class="foto-galeria">
+    <img src="img2/salario-idoso-1024x576.jpg" alt="imagem1">
+    <img src="IMG/APOSENTADORIA-POR-IDADE1.jpg" alt="Imagem 2">
+    <img src="IMG/previdência social.jpg" alt="Imagem 3">
+    <img src="IMG/casal-de-idosos-assina-documento-aposentadoria-previdencia-privada-aposentados-1625490677092_v2_1x1.jpg" alt="Imagem 4">
+
+</div>
+
+
+</script>
+    
+</body>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/WhatsApp_Image_2024-03-06_at_11.27.35-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <title>Strong Finance</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      height: 63px;
+      
+    }
+
+    nav li {
+        display: inline-block;
+      ;
+    }
+
+    nav li a {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-decoration: none;
+
+    }
+    nav li a:hover{
+        background-color: rgb(255, 12, 12);
+    }
+    .dropdown-menu a{
+        display: block;
+      color: black;
+     
+    }
+.dropdown-menu{
+position: absolute;
+box-shadow: 0 0 2px black;
+display: none;
+    }
+    .dropdown-menu a:hover{
+background-color: rgb(240, 74, 23);
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+.img{
+    width: 80px;
+    height: 59px;
+}
+li{
+    align-items: center;
+    padding: 24px;
+}
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #d9534f;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin: 5px 0;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin: 0 0 10px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #d9534f;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+</style>
+
+<body>
+    
+       
+<header>
+   
+    <nav>
+        <div class="logo">
+            <img src="img2/logo oficial.png" class="img">
+        </div>
+       
+        <ul>
+            <li>
+                <a href="telainicial.html">ÍNICIO</a>
+            </li>
+
+
+            <li>
+                <li class="dropdown">
+                <a href="">COMO ECONOMIZAR</a>
+
+                <div class="dropdown-menu">
+                    <a href="paraminhaaposentadoria.html">PARA MINHA APOSENTADORIA</a>    
+                     <a href="parameunegocio.html">PARA MEU NEGÓCIO</a>
+             
+                     <a href="paraboacondição.html">PARA TER UMA BOA CONDIÇÃO FINANCEIRA</a>
+                  
+                    </li>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="">CALCULADORAS</a>
+          
+            
+            <div class="dropdown-menu">
+             
+             <a href="juroscom.html">JUROS COMPOSTOS</a>
+             <a href="calculadorainss.html">CALCULADORA DE INSS</a>
+             <a href="gastocompet.html">CALCULADORA DE GASTOS COM O PET</a>
+             <a href="investimentos.html">CALCULADORA DE INVESTIMENTOS</a>
+           
+            </li>
+</div>
+
+            <li>
+                <a href="aposentadoria.html">APOSENTADORIA</a>
+            </li>
+
+            <li>
+                <a href="produtos.html">BITCOIN</a>
+            </li>
+            <li>
+                <a href="serviçosfiscais.html">POLÍTICA MONETÁRIA</a>
+            </li>
+            <li class="contato">
+                <a href="contato.html">CONTATO</a>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+    <br>
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>A política monetária refere-se às ações que os bancos centrais tomam para gerenciar a oferta de moeda e as taxas de juros com o objetivo de alcançar metas econômicas específicas, como controle da inflação, estabilidade dos preços e crescimento econômico sustentável.</p>
+        </section>
+
+        <section id="objetivos">
+            <h2>Objetivos da Política Monetária</h2>
+            <ul>
+                <li><strong>Controle da Inflação:</strong> Manter a inflação em níveis baixos e estáveis.</li>
+                <li><strong>Estabilidade dos Preços:</strong> Evitar grandes flutuações nos preços dos bens e serviços.</li>
+                <li><strong>Crescimento Econômico Sustentável:</strong> Promover um crescimento econômico estável e sustentável.</li>
+                <li><strong>Pleno Emprego:</strong> Trabalhar para reduzir o desemprego e alcançar o pleno emprego.</li>
+                <li><strong>Estabilidade do Sistema Financeiro:</strong> Garantir a estabilidade do sistema financeiro e prevenir crises financeiras.</li>
+            </ul>
+        </section>
+
+        <section id="instrumentos">
+            <h2>Instrumentos da Política Monetária</h2>
+            <ol>
+                <li><strong>Taxa de Juros:</strong> Os bancos centrais ajustam a taxa de juros para influenciar a oferta de moeda e a atividade econômica.</li>
+                <li><strong>Operações de Mercado Aberto:</strong> Compra e venda de títulos pelo banco central para regular a oferta de moeda.</li>
+                <li><strong>Reservas Bancárias:</strong> Requisitos de reservas que os bancos devem manter, influenciando a capacidade de emprestar.</li>
+                <li><strong>Facilidade de Empréstimo:</strong> Taxas de juros que os bancos podem cobrar ao emprestar do banco central.</li>
+                <li><strong>Política de Comunicação:</strong> Mensagens e orientações sobre as futuras ações da política monetária.</li>
+            </ol>
+        </section>
+
+        <section id="decisoes">
+            <h2>Decisões dos Bancos Centrais</h2>
+            <p>Os bancos centrais tomam decisões de política monetária com base em uma série de fatores, incluindo indicadores econômicos, metas de inflação, e condições do mercado financeiro. As decisões são geralmente anunciadas em reuniões regulares e podem incluir alterações nas taxas de juros, intervenções no mercado de títulos e ajustes nas reservas bancárias.</p>
+        </section>
+
+       
+
+        <section id="exemplos">
+            <h2>Exemplos Históricos</h2>
+            <ul>
+                <li><strong>Crise de 2008:</strong> A resposta dos bancos centrais à crise financeira global, incluindo cortes significativos nas taxas de juros e programas de compra de ativos.</li>
+                <li><strong>Política Monetária do Japão:</strong> Medidas não convencionais, como taxas de juros negativas e estímulos monetários massivos para combater a deflação e estagnar crescimento econômico.</li>
+                <li><strong>Política Monetária dos EUA:</strong> Ajustes nas taxas de juros pelo Federal Reserve e seu impacto na economia americana e global.</li>
+            </ul>
+        </section>
+
+        <section id="glossario">
+            <h2>Glossário</h2>
+            <dl>
+                <dt>Inflação</dt>
+                <dd>Aumento geral e sustentado dos preços dos bens e serviços em uma economia.</dd>
+                <dt>Taxa de Juros</dt>
+                <dd>Percentual cobrado sobre o valor emprestado, que influencia o custo do crédito e o nível de consumo e investimento.</dd>
+                <dt>Operações de Mercado Aberto</dt>
+                <dd>Compra e venda de títulos públicos pelo banco central para regular a oferta de moeda.</dd>
+                <dt>Reservas Bancárias</dt>
+                <dd>Quantia de dinheiro que os bancos devem manter em depósito com o banco central.</dd>
+                <dt>Política de Comunicação</dt>
+                <dd>Estratégias de comunicação usadas pelos bancos centrais para influenciar as expectativas do mercado.</dd>
+            </dl>
+        </section>
+        <section id="formulario">
+            <h2>Calcule o PIB</h2>
+            <form id="pibForm">
+                <label for="consumo">Consumo (C):</label>
+                <input type="number" id="consumo" name="consumo" required>
+
+                <label for="investimentos">Investimentos (I):</label>
+                <input type="number" id="investimentos" name="investimentos" required>
+
+                <label for="gastos">Gastos do Governo (G):</label>
+                <input type="number" id="gastos" name="gastos" required>
+
+                <label for="exportacoes">Exportações (X):</label>
+                <input type="number" id="exportacoes" name="exportacoes" required>
+
+                <label for="importacoes">Importações (M):</label>
+                <input type="number" id="importacoes" name="importacoes" required>
+
+                <button type="submit">Calcular PIB</button>
+            </form>
+        </section>
+
+        <section id="resultado">
+            <h2>Resultado</h2>
+            <p id="resultadoPib">O PIB será exibido aqui.</p>
+            <div class="chart-container">
+                <canvas id="pibChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Política Monetária. Todos os direitos reservados.</p>
+    </footer>
+<script>
+    document.getElementById('pibForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Obter valores dos inputs
+    const consumo = parseFloat(document.getElementById('consumo').value);
+    const investimentos = parseFloat(document.getElementById('investimentos').value);
+    const gastos = parseFloat(document.getElementById('gastos').value);
+    const exportacoes = parseFloat(document.getElementById('exportacoes').value);
+    const importacoes = parseFloat(document.getElementById('importacoes').value);
+
+    // Calcular PIB
+    const pib = consumo + investimentos + gastos + (exportacoes - importacoes);
+    
+    // Exibir resultado
+    document.getElementById('resultadoPib').textContent = `O PIB calculado é R$ ${pib.toFixed(2)}`;
+
+    // Atualizar gráfico
+    updatePibChart(consumo, investimentos, gastos, exportacoes, importacoes, pib);
+});
+
+function updatePibChart(consumo, investimentos, gastos, exportacoes, importacoes, pib) {
+    const ctx = document.getElementById('pibChart').getContext('2d');
+
+    const pibChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Consumo', 'Investimentos', 'Gastos do Governo', 'Exportações', 'Importações', 'PIB Total'],
+            datasets: [{
+                label: 'Valores em R$',
+                data: [consumo, investimentos, gastos, exportacoes, -importacoes, pib],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Valores em R$'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return `${tooltipItem.label}: R$ ${tooltipItem.raw.toFixed(2)}`;
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+
+</script>
+
+</body>
+</html>

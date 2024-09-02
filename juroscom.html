@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/WhatsApp_Image_2024-03-06_at_11.27.35-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <title>Strong Finance</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      height: 63px;
+      
+    }
+
+    nav li {
+        display: inline-block;
+      ;
+    }
+
+    nav li a {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-decoration: none;
+
+    }
+    nav li a:hover{
+        background-color: rgb(255, 12, 12);
+    }
+    .dropdown-menu a{
+        display: block;
+      color: black;
+     
+    }
+.dropdown-menu{
+position: absolute;
+box-shadow: 0 0 2px black;
+display: none;
+    }
+    .dropdown-menu a:hover{
+background-color: rgb(240, 74, 23);
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+.img{
+    width: 80px;
+    height: 59px;
+}
+li{
+    align-items: center;
+    padding: 24px;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"], button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ajusta a largura dos inputs e botões */
+    max-width: 300px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza inputs e botões */
+}
+
+button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #d9534f;
+}
+
+#ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left; /* Alinha o texto à esquerda dentro da lista */
+    margin: 0 auto;
+    max-width: 600px; /* Limita a largura da lista */
+}
+
+</style>
+
+<body>
+    
+       
+<header>
+   
+    <nav>
+        <div class="logo">
+            <img src="img2/logo oficial.png" class="img">
+        </div>
+       
+        <ul>
+            <li>
+                <a href="telainicial.html">ÍNICIO</a>
+            </li>
+
+
+            <li>
+                <li class="dropdown">
+                <a href="">COMO ECONOMIZAR</a>
+
+                <div class="dropdown-menu">
+                    <a href="paraminhaaposentadoria.html">PARA MINHA APOSENTADORIA</a>    
+                     <a href="parameunegocio.html">PARA MEU NEGÓCIO</a>
+                     <a href="paraboacondição.html">PARA TER UMA BOA CONDIÇÃO FINANCEIRA</a>
+                  
+                    </li>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="">CALCULADORAS</a>
+          
+            
+            <div class="dropdown-menu">
+           
+             <a href="juroscom.html">JUROS COMPOSTOS</a>
+             <a href="calculadorainss.html">CALCULADORA DE INSS</a>
+             <a href="gastocompet.html">CALCULADORA DE GASTOS COM O PET</a>
+             <a href="investimentos.html">CALCULADORA DE INVESTIMENTOS</a>
+            </li>
+</div>
+
+            <li>
+                <a href="aposentadoria.html">APOSENTADORIA</a>
+            </li>
+
+            <li>
+                <a href="produtos.html">BITCOIN</a>
+            </li>
+            <li>
+                <a href="serviçosfiscais.html">POLÍTICA MONETÁRIA</a>
+            </li>
+            <li class="contato">
+                <a href="contato.html">CONTATO</a>
+            </li>
+
+        </ul>
+    </nav>
+</header><br><br>
+<section id="conceito">
+    <h2>O que são Juros Compostos?</h2>
+    <p>Os juros compostos referem-se ao método de cálculo de juros onde o valor do principal aumenta com o tempo e os juros são calculados sobre o valor acumulado, que inclui os juros anteriormente adicionados. Diferente dos juros simples, onde os juros são calculados apenas sobre o valor inicial, os juros compostos consideram o montante acumulado até o momento, tornando o crescimento exponencial.</p>
+    <p>A fórmula para calcular o montante acumulado com juros compostos é:</p>
+    <p><strong>A = P (1 + r/n)^(nt)</strong></p>
+    <p>Onde:</p>
+    <ul>
+        <li><strong>A</strong> = Montante acumulado</li>
+        <li><strong>P</strong> = Principal (valor inicial)</li>
+        <li><strong>r</strong> = Taxa de juros anual (decimal)</li>
+        <li><strong>n</strong> = Número de vezes que o juro é capitalizado por ano</li>
+        <li><strong>t</strong> = Tempo em anos</li>
+    </ul>
+</section>
+
+<section id="calculo">
+    <h2>Calculadora de Juros Compostos</h2>
+    <form id="compoundInterestCalculator">
+        <label for="principal">Valor Inicial (R$):</label>
+        <input type="number" id="principal" name="principal" step="0.01" required>
+
+        <label for="rate">Taxa de Juros Anual (%):</label>
+        <input type="number" id="rate" name="rate" step="0.01" required>
+
+        <label for="timesCompounded">Número de Capitalizações por Ano:</label>
+        <input type="number" id="timesCompounded" name="timesCompounded" required>
+
+        <label for="years">Tempo (anos):</label>
+        <input type="number" id="years" name="years" step="0.1" required>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="calculationResult"></div>
+</section>
+
+<script>
+    document.getElementById('compoundInterestCalculator').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Obter valores dos inputs
+    const principal = parseFloat(document.getElementById('principal').value);
+    const rate = parseFloat(document.getElementById('rate').value) / 100;
+    const timesCompounded = parseInt(document.getElementById('timesCompounded').value);
+    const years = parseFloat(document.getElementById('years').value);
+
+    // Calcular o montante acumulado
+    const amount = principal * Math.pow((1 + rate / timesCompounded), (timesCompounded * years));
+
+    // Exibir o resultado
+    document.getElementById('calculationResult').innerHTML = `<p><strong>Montante Acumulado:</strong> R$ ${amount.toFixed(2)}</p>`;
+
+    // Atualizar o gráfico
+    updateInterestGrowthChart(principal, rate, timesCompounded, years);
+});
+
+function updateInterestGrowthChart(principal, rate, timesCompounded, years) {
+    const ctx = document.getElementById('interestGrowthChart').getContext('2d');
+    const labels = [];
+    const data = [];
+    const months = years * 12;
+    const monthlyRate = rate / 12;
+    let futureValue = principal;
+
+    for (let i = 0; i <= months; i++) {
+        if (i % 12 === 0) {
+            labels.push(`Ano ${i / 12}`);
+            data.push(futureValue.toFixed(2));
+        }
+        futureValue = futureValue * (1 + monthlyRate);
+    }
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Crescimento dos Juros Compostos',
+                data: data,
+                borderColor: '#d9534f',
+                backgroundColor: 'rgba(217, 83, 79, 0.2)',
+                borderWidth: 2,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Tempo'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Montante (R$)'
+                    },
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+}
+
+</script>
+
+</body>
+</html>
